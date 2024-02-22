@@ -1,3 +1,4 @@
+#author github.com/kometarou1145
 import tls_client
 
 def get_new_session(client: str, random_ext: bool):
