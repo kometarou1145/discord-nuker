@@ -6,7 +6,7 @@ import time
 
 client = discord.Client()
 
-token = 'MTIxMDIzMDE3MDYxOTc0NDI5Ng.GOPqKD.D2jAhRLSVEZ1dfPsA0RueKmwa6bt_yNkPB_szU'
+token = 'Your bot token'
 
 @client.event
 async def on_ready():
