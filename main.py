@@ -17,7 +17,7 @@ async def on_ready():
 async def on_message(message):
     args = message.content.split()[1:]
 
-    if message.content.startswith(".setup"):
+    if message.content.lower().startswith(".setup"):
         if len(args) != 7: return
 
         channel_name = str(args[0])
