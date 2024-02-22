@@ -1,3 +1,4 @@
+#author github.com/kometarou1145
 import discord
 import threading
 from utils import DiscordUtils
