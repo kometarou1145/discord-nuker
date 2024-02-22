@@ -1,3 +1,4 @@
+#author github.com/kometarou1145
 import time
 from utils import DiscordUtils
 
