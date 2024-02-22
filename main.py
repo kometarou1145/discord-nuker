@@ -1,11 +1,10 @@
 #author github.com/kometarou1145
 import discord
 import threading
-from utils import DiscordUtils
 from utils import AppUtils
-import time
 
 client = discord.Client()
+bot=True
 
 token = 'Your bot token'
 
@@ -37,7 +36,7 @@ async def on_message(message):
                 channel_ids,
                 token,
                 delete_delay,
-                True
+                bot
             )
         )
 
@@ -51,7 +50,7 @@ async def on_message(message):
                 channel_name,
                 create_delay,
                 channel_amount,
-                True
+                bot
             )
         )
 
@@ -65,10 +64,10 @@ async def on_message(message):
                 send_message.replace('\\n', '\n'),
                 send_delay,
                 send_amount,
-                True
+                bot
             )
         )
 
         send.start()
 
-client.run(token)
+client.run(token, bot=bot)

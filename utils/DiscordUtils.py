@@ -1,7 +1,5 @@
 #author github.com/kometarou1145
-import tls_client
 from utils import TlsClientUtils
-from fake_useragent import UserAgent
 
 def send(message: str, token: str, channel_id: int, bot: bool):
     session = TlsClientUtils.get_new_session("chrome120", True)
