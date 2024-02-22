@@ -43,7 +43,6 @@ def send_messages(token: str, guild_id: int, message: str, send_delay: float, am
                 channel_id=int(channel_ids[i]),
                 bot=bot
             )
-
+            
+            count+=1
             time.sleep(send_delay)
-        
-        count+=1
