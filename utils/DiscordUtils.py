@@ -1,3 +1,4 @@
+#author github.com/kometarou1145
 import tls_client
 from utils import TlsClientUtils
 from fake_useragent import UserAgent
